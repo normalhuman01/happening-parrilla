@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+}
+
+:root {
+    --blanco : rgb(248, 238, 238);
+    --gris : rgb(150,155,140);
+    --negro : rgb(5,5,5);
+}
+
+body{
+    background-color: var(--negro);
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.header_content{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header_content__title h2{
+    font-family: 'Ruda', sans-serif;
+    font-family: 'Smooch', cursive; 
+    color: var(--blanco);
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.header_content__subtitles p{
+    color: var(--blanco);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.header_content__subtitles h4{
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+.header__img_container{
+    width: 100%;
+    height: 100%;
+}
+
+.header__img_container img{
+    width: 100%;
+    height: 100%;
+}
+
+.reservas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.reservas h5{
+    color: var(--blanco);
+}
+
+.reservas_title{
+    display: block;
+}
+
+.reservas_title h4{
+    margin-top: 20px;
+    color: var(--blanco);
+    padding: 5px;
+    font-size: 30px;
+    position: relative;
+}
+
+.reservas_title h4::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 40px;
+    height: 2px;
+    background-color: var(--gris);
+}
+
+
+.reservas_lugar{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservas_lugar h5{
+    font-weight: 100;
+    text-align: center;
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.reservas_lugar a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--blanco);
+    padding: 10px 0;
+}
+
+.reservas_lugar button{
+    background: var(--negro);
+    border: 1px solid var(--blanco);
+    padding: 5px 20px;
+    min-width: 100px;
+}
+
+
+.sobre_nosotros{
+    margin-top: 30px;
+    border-top: 1px solid var(--blanco);
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre_nosotros_first_container{
+    padding: 0px 8px;
+    height: 600px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease-in-out 0.1s;
+}
+
+.sobre_nosotros_first_container:hover{
+    transform: translateY(-8px);
+}
+
+.sobre_nostros__img_container{
+    padding: 5.5px;
+    max-width: 400px;
+    height: 100%;
+    background: var(--blanco);
+}
+
+.sobre_nostros__img_container img{
+    width: 100%;
+    height: 100%;
+}
+
+.sobre_nosotros__content{
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre_nosotros__content h5{
+    color: var(--blanco);
+    font-size: 25px;
+    font-weight: 50;
+    margin-bottom: 10px;
+}
+
+.sobre_nosotros__content p{
+    color: var(--blanco);
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+.platos{
+    background-image: url("../imgs/mangar_comida.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:14px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.platos__plato_container{
+    padding: 0px 8px;
+    margin-bottom: 10px;
+    max-width: 380px;
+    height: 500px;
+}
+
+.plato_container_img{
+    width: 100%;
+    height: 100%;
+    padding: 4.7px;
+    background: var(--blanco);
+}
+
+.plato_container_img img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: url("../imgs/plato_argentino.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulos_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.titulos_footer *{
+    color: var(--blanco);
+}
+
+.titulos_footer h3{
+    font-family: 'Ruda', sans-serif;
+    font-family: 'Smooch', cursive; 
+    color: var(--blanco);
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.titulos_footer h5{
+    text-align: center;
+}
+
+.titulos_footer p{
+    text-align: center;
+}
+
+.redes_sociales{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.redes_sociales i{
+    color: var(--blanco);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+@media screen and (min-width:780px){
+    .reservas{
+        min-height: 300px;
+    }
+
+    .reservas_title h4{
+        font-weight: 100;
+    }
+
+    .reservas_lugar h5{
+        font-size: 35px;
+        font-weight: 100;
+    }
+
+    .reservas_lugar button a{
+        font-size: 18px;
+    }
+
+    .restaurantes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .restaurantes div{
+        margin: 0px 42px;
+    }
+
+    .sobre_nosotros{
+        flex-direction: row;
+    }
+
+    .sobre_nosotros_first_container{
+        min-width: 400px;
+    }
+
+    .sobre_nostros__img_container{
+        width: 100%;
+    }
+    .sobre_nosotros__content{
+        max-width: 500px;
+        padding-left: 45px;
+    }
+    .platos{
+        padding: 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .platos__plato_container{
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .plato_container_img{
+        height: 100%;
+    }
+
+    footer{
+        height: 500px;
+    }
+}

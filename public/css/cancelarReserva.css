@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blanco : rgb(248, 238, 238);
+    --gris : rgb(150,155,140);
+    --negro : rgb(5,5,5);
+    --rojo: rgb(200 0 0);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: var(--negro);
+}
+
+.form_container{
+    padding: 20px;
+    border: 1px solid var(--gris);
+    background-color: var(--blanco);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilos para el botón */
+.form_container button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+.form_container button:hover {
+    background-color: var(--rojo);
+}

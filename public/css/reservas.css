@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+}
+
+:root {
+    --blanco : rgb(235, 255, 255);
+    --celeste : rgb(30,144,255);
+    --celesteOscuro : rgb(6, 129, 251);
+    --gris : rgb(149, 144, 144);
+    --negro : rgb(5,5,5);
+}
+
+body{
+    background-image: url("../imgs/comida_restaurante.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor_formulario {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: var(--negro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_nombre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.contenedor_nombre h2{
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: 100;
+    color: var(--blanco);
+}
+
+form{
+    padding-top: 20px;
+}
+
+label{
+    color: var(--blanco);
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    color: var(--blanco);
+    text-align: center;
+    padding: 5px;
+}
+
+.cantidad_comensales_container input{
+    display: none;
+}
+
+.numeros_container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.numero_container{
+    padding: 15px;
+    border-radius: 32%;
+    margin: 0px 5px;
+    background: var(--blanco);
+}
+
+.numero_container:hover{
+    cursor: pointer;
+    animation: scaleHoverInput 1s ease-out 0s 1 normal forwards;
+}
+
+
+.number_selected{
+    background: var(--celeste);
+}
+
+.numero_container p{
+    font-size: 28px;
+    color: var(--gris);
+}
+
+.datos_reserva{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.datos_reserva a{
+    margin: 5px;
+    text-decoration: none;
+}
+
+.reserva{
+    padding: 10px 5px;
+    border-radius: 10px;
+    background: var(--celeste);
+}
+
+.reserva p{
+    color: var(--blanco);
+}
+
+.contenedor_formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor_formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contenedor_formulario input,
+.contenedor_formulario select {
+    width: calc(100% - 4px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contenedor_formulario input:focus {
+    border-color: var(--celeste);
+    outline: none;
+}
+
+.contenedor_formulario input[type="submit"] {
+    background-color: var(--celeste);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#fecha_reserva{
+    display: none;
+}
+
+.contenedor_formulario input[type="submit"]:hover {
+    background-color: var(--celesteOscuro);
+}
+
+
+.responser_server{
+    color: var(--blanco);
+}
+
+.contenedor_privacidad{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_privacidad p{
+    color: var(--celeste);
+}
+
+.contenedor_privacidad b{
+    color: var(--celeste);
+}
+
+
+@keyframes scaleHoverInput {
+    0%{
+        cursor: pointer;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1.2;
+    }
+}

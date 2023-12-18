@@ -1,0 +1,24 @@
+:root {
+    --blanco : rgb(248, 238, 238);
+    --gris : rgb(150,155,140);
+    --negro : rgb(5,5,5);
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/comida_restaurante.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reserva_container{
+    padding: 20px;
+    background: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}

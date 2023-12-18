@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+}
+
+:root {
+    --blanco : rgb(235, 255, 255);
+    --celeste : rgb(30,144,255);
+    --celesteOscuro : rgb(6, 129, 251);
+    --gris : rgb(149, 144, 144);
+    --negro : rgb(5,5,5);
+}
+
+body{
+    background-image: url("../imgs/comida_restaurante.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor_formulario {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: var(--negro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_nombre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.contenedor_nombre h2{
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: 100;
+    color: var(--blanco);
+}
+
+.datos_reserva{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.datos_reserva a{
+    margin: 5px;
+    text-decoration: none;
+}
+
+.reserva{
+    padding: 10px 5px;
+    border-radius: 10px;
+    background: var(--negro);
+    border-top: 1px solid var(--blanco);
+    border-bottom: 1px solid var(--blanco);
+    border-right: 0.4px solid var(--blanco);
+    border-left: 0.4px solid var(--blanco);;
+    font-size: 12px;
+}
+
+.reserva p{
+    color: var(--blanco);
+    font-size: 100%;
+}
+
+.contenedor_formulario label {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 25px;
+}
+
+#fechas{
+    display: none;
+}
+
+.contenedor_fechas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.fechas{
+    margin: 10px;
+}
+
+.fechas:hover{
+    cursor: pointer;
+    animation: fechaHover 1s ease-out 0s 1 normal forwards;
+}
+
+.fechas p{
+    color: var(--blanco);
+    text-align: center;
+}
+
+.contenedor_dia p{
+    padding-bottom: 2px;
+}
+
+.contenedor_numero_dia{
+    padding: 16px;
+    border-radius: 25px;
+    border-color: 1px solid var(--gris);
+}
+
+.contenedor_numero_dia p{
+    color: var(--gris);
+}
+
+.contenedor_numero_dia{
+    background: var(--blanco);
+}
+
+
+.responser_server{
+    color: var(--blanco);
+}
+
+@keyframes fechaHover{
+    0%{
+
+    }
+    50%{
+        scale: 1.2;
+    }
+
+    100%{
+        scale: 1.2;
+    }
+}
+
+
+
